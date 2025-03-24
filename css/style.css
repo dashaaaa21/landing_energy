@@ -1,0 +1,294 @@
+/* Основні стилі */
+body {
+    font-family: 'Mulish', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Фіксований хедер */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    /* Прозорий фон */
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #f1c40f;
+}
+
+
+/* Банер */
+.banner {
+    position: relative;
+    background: url('../images/banner.jpg') no-repeat center/cover;
+    height: 80vh;
+    /* Регулюйте висоту */
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: left;
+    padding-left: 5%;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.banner-content {
+    position: absolute;
+    bottom: 10%;
+}
+
+.banner h1 {
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* Кнопка */
+button {
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background: #123f70;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #f1c40f;
+}
+
+
+/* Основний контент */
+.wrap {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+h2 {
+    text-align: center;
+    color: #000000;
+    font-size: 70px;
+    transition: all .3s linear;
+}
+
+h2:hover {
+    color: #f1c40f;
+    ;
+    cursor: pointer;
+}
+
+/* Команда */
+.teams {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.teamCard {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+    margin: 10px;
+    transition: all .3s linear;
+}
+
+.teamCard:hover {
+    background: #123f70;
+    color: white;
+}
+
+.plate {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 10px auto 0;
+    font-weight: bold;
+    color: white;
+}
+
+.yellow {
+    background: #0c233c;
+}
+
+.red {
+    background: #f1c40f;
+}
+
+.blue {
+    background: #007bff;
+}
+
+/* Відгуки */
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: unset;
+}
+
+.testimonial-card {
+    background: rgb(251, 251, 251);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+    transition: all .3s linear;
+
+}
+
+.testimonial-card:hover {
+    background: #123f70;
+    color: white;
+
+}
+
+.testimonial-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+
+    .teamCard,
+    .testimonial-card {
+        width: 100%;
+    }
+
+    .banner h1 {
+        font-size: 2rem;
+    }
+}
+
+
+/* program */
+
+.programInner {
+    height: 300px;
+    overflow-y: scroll;
+    margin-bottom: 100px;
+}
+
+.programInner h3 {
+    position: sticky;
+    top: 0;
+    background-color: #123f70;
+    ;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.programInner h3:nth-of-type(2n) {
+    background-color: #f1c40f;
+    ;
+}
+
+.programInner h3:nth-of-type(3n) {
+    background-color: #0037ff;
+}
+
+.alignright {
+    float: right;
+    border-radius: 6px;
+    margin: 0 8px 20px 15px;
+    max-width: 450px;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.clear {
+    clear: both;
+}
+
+::-webkit-scrollbar-track {
+    background: #005b2c;
+    border-radius: 10px;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #d4e7d7, #d4e7d7);
+    border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #d4e7d7, #cbefdd);
+}
+
+
+
+
+/* Футер займає всю ширину і прилипає до низу */
+footer {
+    background-color: #0a2d5f;
+    /* Темно-синій */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+}
